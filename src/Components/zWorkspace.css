@@ -1,0 +1,81 @@
+.note-short {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.input {
+  margin: 3px 3px 3px 19px;
+}
+.note-body,
+.note-body:active,
+.note-body:focus-visible {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 90%;
+  max-height: 22px;
+  text-align: justify;
+  margin: 0px 50px 0px 0px;
+  border: none;
+  background: #e3e3e3;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+  overflow: hidden;
+}
+
+.note-detailed {
+  padding: 15px 0px 15px 30px;
+  border-bottom: 1px solid black;
+}
+
+.note-title,
+.note-title:active,
+.note-title:focus-visible {
+  margin: 0px;
+  outline: none;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 0 1rem 0;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.note-title::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+.note-brief,
+.note-brief:active,
+.note-brief:focus-visible {
+  margin-block: 20px;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 0 1rem 0;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+.note-brief::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+.note-details,
+.note-details:active,
+.note-details:focus-visible {
+  min-width: 95%;
+  min-height: 100px;
+  text-align: justify;
+  margin: 0px 50px 0px 0px;
+  border: none;
+  background: #e3e3e3;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+  scrollbar-width: none;
+}
+.note-details::-webkit-scrollbar {
+  scrollbar-width: none;
+}

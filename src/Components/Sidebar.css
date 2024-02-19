@@ -1,0 +1,48 @@
+.profile {
+  height: 250px;
+  border-bottom: 1px solid white;
+}
+
+.photo {
+  background: url("../../images.jpeg");
+  height: 150px;
+  width: 150px;
+  margin: 35px auto 0px auto;
+  border-radius: 150px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  padding: 25px 85px;
+}
+
+.item-title {
+  height: 60px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9920343137254902) 10%,
+    rgba(0, 0, 0, 0.88) 30%,
+    rgba(0, 0, 0, 0.75) 45%,
+    rgba(0, 0, 0, 0.5) 67%,
+    rgba(0, 0, 0, 0.35) 80%
+  );
+  cursor: pointer;
+}
+.logout {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  bottom: 10px;
+  padding-left: 20px;
+  border-top: 1px solid white;
+}

@@ -1,0 +1,115 @@
+.container {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99.8vh;
+  width: 99.8vw;
+  border: 1px solid black;
+  background: rgba(231, 231, 231, 0);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container {
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  height: 70vh;
+  border-radius: 50px;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+}
+
+.modal > h1 {
+  text-align: center;
+  font-size: 36px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.note-detailed-modal {
+  display: block;
+  border: none;
+  height: 60%;
+  margin-left: 35px;
+}
+
+.detailed-note-title-modal,
+.detailed-note-title-modal:active,
+.detailed-note-title-modal:focus-visible {
+  display: block;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  height: 30px;
+  font-weight: bold;
+  scrollbar-width: none;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+.note-detailed-modal *::placeholder {
+  color: black;
+}
+
+.detailed-note-brief-modal,
+.detailed-note-brief-modal:active,
+.detailed-note-brief-modal:focus-visible {
+  display: block;
+  font-size: 24px;
+  color: #575454;
+  margin-block: 20px;
+  border: none;
+  height: 26px;
+  font-weight: 200;
+  cursor: pointer;
+  scrollbar-width: none;
+  outline: none;
+}
+
+.detailed-note-body-modal {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 70%;
+  width: 100%;
+
+  scrollbar-width: none;
+}
+
+.close {
+  width: 35px;
+  height: 35px;
+  border: 2px solid red;
+  border-radius: 30px;
+  background: transparent;
+  margin-left: 50%;
+  color: black;
+}
+
+.close:hover {
+  border-radius: 30px;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 0px 30px 6px rgb(255 0 0 / 88%);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 30px 6px rgba(255, 0, 0, 88%);
+  -moz-box-shadow: 0px 0px 30px 6px rgba(255, 0, 0, 88%);
+
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: box-shadow 0.9s;
+  transform: scale(1.5);
+  transition: transform 0.7s ease-in-out;
+}

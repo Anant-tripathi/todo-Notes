@@ -1,0 +1,91 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  border-bottom: 1px solid #969595;
+}
+
+.left-buttons {
+  padding: 5px;
+}
+
+.btn {
+  position: relative;
+  padding: 9px;
+  border-radius: 8px;
+  box-shadow: 4px 6px 9px -2px #00000040;
+  clear: left;
+  cursor: pointer;
+}
+
+.btn,
+.btn:active,
+.btn:focus-visible {
+  border: none;
+  outline: none;
+}
+
+#selOpt {
+  width: 74px;
+}
+
+#cross {
+  margin-right: 5px;
+  background: white;
+}
+
+#cross1 {
+  height: 15px;
+  width: 15px;
+}
+
+.three * {
+  margin: 0px;
+  border-radius: 0px;
+}
+
+#one::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 1px;
+  background-color: #969595;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#three::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 1px;
+  background-color: #969595;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#one {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#three {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#S {
+  margin-left: 5px;
+}
+
+.right-buttons {
+  display: flex;
+}
